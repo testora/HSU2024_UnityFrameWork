@@ -1,0 +1,269 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6291790510160461831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2802924c2b8a67843b1254427c45264c, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+  description: 
+  state: 0
+  started: 0
+  guid: b5c6e4b0b985759419500347cdb5d93f
+  position: {x: 0, y: 0}
+  child: {fileID: 6425910438339341401}
+--- !u!114 &-5520214719609650823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bd73bb524759e409441631d19cddc7, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+  description: Phase4
+  state: 0
+  started: 0
+  guid: 79f2d9b323e85ab4991b3388ac7de576
+  position: {x: 450, y: 299.80005}
+  children: []
+--- !u!114 &-5214655646329784051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bd73bb524759e409441631d19cddc7, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+  description: Phase2
+  state: 0
+  started: 0
+  guid: 20f0c8789f8e82d42bdca57f9ba13db8
+  position: {x: 150.00002, y: 299.80005}
+  children: []
+--- !u!114 &-2813736442818718003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bd73bb524759e409441631d19cddc7, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+  description: Phase1
+  state: 0
+  started: 0
+  guid: ff7fac74310cd6141a70e8d1f3d58502
+  position: {x: 0, y: 299.99997}
+  children:
+  - {fileID: 5656252716638823228}
+--- !u!114 &-2148343655004162647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bd73bb524759e409441631d19cddc7, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+  description: Phase3
+  state: 0
+  started: 0
+  guid: 49f1a621f89533e4abc60e11e42747a6
+  position: {x: 300.00003, y: 299.80005}
+  children: []
+--- !u!114 &-1703112069916578763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211f61c24691bb54c86af0795db7b0ae, type: 3}
+  m_Name: AnimationTriggerNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+  description: 
+  state: 0
+  started: 0
+  guid: 48eefe6c8200f884fba20f192765577d
+  position: {x: 0, y: 455.33334}
+  trigger: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 205e11ec795d4a14da311e1b5b40da79, type: 3}
+  m_Name: Brother
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -6291790510160461831}
+  treeState: 0
+  blackboard:
+    dynamicFields:
+    - variableName: NewVariable
+      type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+    animator: {fileID: 0}
+  nodes:
+  - {fileID: -6291790510160461831}
+  - {fileID: 6425910438339341401}
+  - {fileID: -2813736442818718003}
+  - {fileID: -5214655646329784051}
+  - {fileID: -2148343655004162647}
+  - {fileID: -5520214719609650823}
+  - {fileID: 5656252716638823228}
+--- !u!114 &5656252716638823228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac5694e629229d4ab0a5d034d4776bf, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+  description: Initial Phase
+  state: 0
+  started: 0
+  guid: 71999e39b6095cb48aa491daa1758aa5
+  position: {x: 0, y: 451.33337}
+  _nodeType: 3
+  _floatParam: 
+  _floatValue: 0
+  _intParam: 
+  _intValue: 0
+  _boolParam: 
+  _boolValue: 0
+  _trigger: 
+--- !u!114 &6425910438339341401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bd73bb524759e409441631d19cddc7, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+  description: PhaseSelector
+  state: 0
+  started: 0
+  guid: 4d92463682e1ec04fa361c5d34843b27
+  position: {x: -0.000005681606, y: 149.33331}
+  children:
+  - {fileID: -2813736442818718003}
+  - {fileID: -5214655646329784051}
+  - {fileID: -2148343655004162647}
+  - {fileID: -5520214719609650823}
+--- !u!114 &6932623802342982620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac5694e629229d4ab0a5d034d4776bf, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+  description: 
+  state: 0
+  started: 0
+  guid: 319dd598d7fed6344b38cea7be3bb47b
+  position: {x: -17.325794, y: 596.66656}
+  _nodeType: 3
+  _floatParam: 
+  _floatValue: 0
+  _intParam: 
+  _intValue: 0
+  _boolParam: 
+  _boolValue: 0
+  _trigger: 
+--- !u!114 &7636199111028715838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac5694e629229d4ab0a5d034d4776bf, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+  description: 
+  state: 0
+  started: 0
+  guid: fd97f9620194434489b49b52f66bc93c
+  position: {x: 0, y: 540.3733}
+  _nodeType: 3
+  _floatParam: 
+  _floatValue: 0
+  _intParam: 
+  _intValue: 0
+  _boolParam: 
+  _boolValue: 0
+  _trigger: 

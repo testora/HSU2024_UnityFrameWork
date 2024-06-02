@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Data/UIBuilder/BehaviorTreeEditor.uss?fileID=7433441132597879392&amp;guid=749a1856617f7224e9e1a9148e10dea2&amp;type=3#BehaviorTreeEditor" />
+    <uie:Toolbar name="Toolbar">
+        <uie:ToolbarMenu tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" text="Assets" />
+    </uie:Toolbar>
+    <SplitView fixed-pane-initial-dimension="320" style="background-color: rgb(56, 56, 56);">
+        <ui:VisualElement name="left-panel" style="flex-grow: 1;">
+            <SplitView orientation="Vertical" fixed-pane-initial-dimension="300">
+                <ui:VisualElement name="inspector-container" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Inspector" parse-escape-sequences="true" display-tooltip-when-elided="true" style="background-color: rgb(37, 37, 37); color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-left: 4px; padding-top: 4px; padding-right: 4px; padding-bottom: 4px;" />
+                    <InspectorView />
+                </ui:VisualElement>
+                <ui:VisualElement name="blackboard-container" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Blackboard" parse-escape-sequences="true" display-tooltip-when-elided="true" style="background-color: rgb(37, 37, 37); color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px;" />
+                    <ui:IMGUIContainer />
+                </ui:VisualElement>
+            </SplitView>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" style="flex-grow: 1; color: rgb(255, 255, 255);">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" style="background-color: rgb(37, 37, 37); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px;" />
+            <BehaviorTreeView style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </SplitView>
+</ui:UXML>
