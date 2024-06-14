@@ -16,4 +16,9 @@ public class SkillController : MonoBehaviour
     {
         skillContainer.Update();
     }
+
+    public bool UseSkill(string skillName)
+    {
+        return skillContainer.UseSkill(skillName);
+    }
 }

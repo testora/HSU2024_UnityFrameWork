@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 [CustomEditor(typeof(SkillController))]
-public class DemoControllerEditor : Editor
+public class SkillControllerEditor : Editor
 {
     private ReorderableList reorderableList;
 

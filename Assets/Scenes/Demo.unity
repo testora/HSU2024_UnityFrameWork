@@ -432,11 +432,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillContainer:
     skills:
-    - skillName: NewVariable
+    - skillName: PRIMARY:MELEE
       maxStock: 1
-      coolTime: 0
+      coolTime: 4
+      currentStock: 0
+      currentCoolTime: 0
+    - skillName: PRIMARY:MELEE:LUNAR
+      maxStock: 1
+      coolTime: 4
+      currentStock: 0
+      currentCoolTime: 0
+    - skillName: PRIMARY:SHARD
+      maxStock: 1
+      coolTime: 6
+      currentStock: 0
+      currentCoolTime: 0
+    - skillName: PRIMARY:SHARD:HURT
+      maxStock: 1
+      coolTime: 6
+      currentStock: 0
+      currentCoolTime: 0
+    - skillName: SECONDARY
+      maxStock: 1
+      coolTime: 5
       currentStock: 1
-      currentCoolTime: 1
+      currentCoolTime: 0
+    - skillName: SECONDARY:FISTSLAM
+      maxStock: 1
+      coolTime: 12
+      currentStock: 1
+      currentCoolTime: 0
+    - skillName: UTILITY
+      maxStock: 2
+      coolTime: 3
+      currentStock: 0
+      currentCoolTime: 0
+    - skillName: SPECIAL:SHOCKWAVE
+      maxStock: 1
+      coolTime: 30
+      currentStock: 0
+      currentCoolTime: 0
+    - skillName: SPECIAL:ULT
+      maxStock: 0
+      coolTime: 4
+      currentStock: 0
+      currentCoolTime: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0

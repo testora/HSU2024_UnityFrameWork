@@ -46,6 +46,9 @@ public class AnimationNode : ActionNode
 
     protected override State OnUpdate()
     {
-        return State.Running;
+        if (blackboard.animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+            return State.Running;
+        else
+            return State.Success;
     }
 }

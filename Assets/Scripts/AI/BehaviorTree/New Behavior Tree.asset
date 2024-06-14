@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 205e11ec795d4a14da311e1b5b40da79, type: 3}
+  m_Name: New Behavior Tree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 6482129584840430093}
+  treeState: 0
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+    skillController: {fileID: 0}
+  nodes:
+  - {fileID: 6482129584840430093}
+  - {fileID: 6313864493642633650}
+--- !u!114 &6313864493642633650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56bae11d5edf81479390f7869c3893e, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+    skillController: {fileID: 0}
+  description: 
+  state: 0
+  started: 0
+  guid: 2f95e37b058a6974c8c6ee585d5dcc4d
+  position: {x: -0.0000012325327, y: 181.89667}
+  message: 
+--- !u!114 &6482129584840430093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2802924c2b8a67843b1254427c45264c, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  blackboard:
+    dynamicFields: []
+    animator: {fileID: 0}
+    skillController: {fileID: 0}
+  description: 
+  state: 0
+  started: 0
+  guid: e2375ea8f8a99f74dab6c07d6be9327c
+  position: {x: 0, y: 0}
+  child: {fileID: 6313864493642633650}

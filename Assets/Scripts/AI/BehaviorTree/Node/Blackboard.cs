@@ -11,12 +11,14 @@ public class Blackboard
     private Dictionary<string, object> _blackboardDictionary = new Dictionary<string, object>();
     
     public Animator animator;
+    public SkillController skillController;
 
     public void Initialize(MonoBehaviour monoBehaviour)
     {
         InitializeDictionary();
 
         animator = monoBehaviour.GetComponent<Animator>();
+        skillController = monoBehaviour.GetComponent<SkillController>();
     }
 
     private void InitializeDictionary()

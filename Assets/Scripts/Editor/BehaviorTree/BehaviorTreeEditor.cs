@@ -215,7 +215,8 @@ public class BehaviorTreeEditor : EditorWindow
             return;
 
         _treeObject.Update();
-        EditorGUILayout.PropertyField(_blackboardProperty.FindPropertyRelative("animator"));
+    //  EditorGUILayout.PropertyField(_blackboardProperty.FindPropertyRelative("animator"));
+    //  EditorGUILayout.PropertyField(_blackboardProperty.FindPropertyRelative("skillController"));
         _variableList.DoLayoutList();
         _treeObject.ApplyModifiedProperties();
     }

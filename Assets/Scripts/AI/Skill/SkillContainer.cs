@@ -29,7 +29,6 @@ public class SkillContainer
 
     public void Initialize()
     {
-        _skillDictionary = new Dictionary<string, Skill>();
         foreach (var skill in skills)
         {
             if (!_skillDictionary.ContainsKey(skill.skillName))
@@ -37,6 +36,31 @@ public class SkillContainer
                 _skillDictionary.Add(skill.skillName, skill);
             }
         }
+    }
+
+    private bool IsReady(string skillName)
+    {
+        if (_skillDictionary.TryGetValue(skillName, out var skill))
+        {
+            if (skill.currentStock > 0)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public bool UseSkill(string skillName)
+    {
+        if (!IsReady(skillName))
+        {
+            return false;
+        }
+
+        _skillDictionary[skillName].currentStock--;
+
+        return true;
     }
 }
 
